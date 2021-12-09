@@ -1,7 +1,9 @@
 clone:
   depth: full
 pipelines:
-  default:
-    - step:
-        script:
-          - git push --mirror git@github.com:lokeswari-mm/test-mirror-mm.git
+  branches:
+    main:
+      - step:
+          script:
+             - git push --mirror git@github.com:lokeswari-mm/test-mirror-mm.git
+           
