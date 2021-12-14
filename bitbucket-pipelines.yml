@@ -8,6 +8,6 @@ pipelines:
              - git remote add sync git@github.com:lokeswari-mm/test-mirror-mm.git
              - git checkout dev
              - git pull    
-             - git push sync bitbucketmain
+             - git push sync dev
              
            
