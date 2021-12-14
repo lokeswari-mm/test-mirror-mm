@@ -5,5 +5,9 @@ pipelines:
     main:
       - step:
           script:
-             - git push --mirror git@github.com:lokeswari-mm/test-mirror-mm.git
+             - git remote add sync git@github.com:lokeswari-mm/test-mirror-mm.git
+             - git checkout bitbucket-main
+             - git pull    
+             - git push sync bitbucket-main
+             
            
