@@ -2,7 +2,7 @@ clone:
   depth: full
 pipelines:
   branches:
-    main:
+    dev:
       - step:
           script:
              - git remote add sync git@github.com:lokeswari-mm/test-mirror-mm.git
